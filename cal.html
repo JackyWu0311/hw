@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<title>計算機</title>
+<body>
+
+<h1>JavaScript Functions</h1>
+
+<p>This example calls a function which performs a calculation, and returns the result:</p>
+
+Number1: <br>
+<input type="number" id="a" value="2">
+<br>
+
+Number2: <br>
+<input type="number" id="b" value="5">
+<br>
+
+<button onclick="plus()">+</button>
+<button onclick="minus()">-</button>
+<button onclick="multi()">X</button>
+<button onclick="division()">/</button>
+<button onclick="document.getElementById('demo').innerHTML=''">C</button>
+
+<br>
+<h1>Answer:</h1>
+<h1 id="demo"></h1>
+
+<script>
+function plus(){
+	var x = parseInt(document.getElementById("a").value);
+	var y = parseInt(document.getElementById("b").value);
+	document.getElementById("demo").innerHTML = x+y;
+}
+
+function minus(){
+	var x = parseInt(document.getElementById("a").value);
+	var y = parseInt(document.getElementById("b").value);
+	document.getElementById("demo").innerHTML=x-y;
+}
+
+function multi(){
+	var x = parseInt(document.getElementById("a").value);
+	var y = parseInt(document.getElementById("b").value);
+	document.getElementById("demo").innerHTML=x*y;
+}
+
+function division(){
+	var x = parseFloat(document.getElementById("a").value);
+	var y = parseFloat(document.getElementById("b").value);
+	document.getElementById("demo").innerHTML=x/y;
+}
+
+</script>
+
+</body>
+</html>
